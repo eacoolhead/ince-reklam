@@ -1,12 +1,9 @@
+// src/components/ui/button.js
+import React from 'react';
 
-import React from "react";
-
-export function Button({ children, className = "", ...props }) {
+export function Button({ children, className, ...props }) {
   return (
-    <button
-      className={`transition font-medium ${className}`}
-      {...props}
-    >
+    <button className={`px-6 py-3 rounded-full text-lg ${className}`} {...props}>
       {children}
     </button>
   );
